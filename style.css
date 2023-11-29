@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    text-align: left;
+}
+
+.wrapper {
+    max-width: 15rem;
+    max-height: 63rem;
+    margin: 4rem 0 4rem 0;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-height: 65vh;
+        max-width: 55vw;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
+.sedans, .suvs, .luxury {
+    height: 21rem;
+    padding: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .sedans, .suvs, .luxury {
+        height: auto;
+        padding: 0;
+    }
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+}
+
+@media (min-width: 768px) {
+    .sedans {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+@media (min-width: 768px) {
+    .luxury {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+img {
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+    img {
+        width: auto;
+        margin: 2.2rem;
+    }
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin: 0 0 0 2.2rem;
+    }
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .75rem;
+    line-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    p {
+        margin: 1.5rem 2.2rem 1.5rem 2.2rem;
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    font-size: .81rem;
+    border: 1px solid white;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 24px;
+    padding: .75rem 1.25rem .75rem 1.25rem;
+    vertical-align: middle;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    a {
+        margin-left: 2.2rem;
+        margin-top: 2rem;
+        margin-bottom: 2.2rem;    
+    }
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs a:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+
